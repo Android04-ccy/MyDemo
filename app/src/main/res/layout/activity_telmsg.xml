@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.mydemo.DB.TelmsgActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/tel_tb"
+        android:background="@color/green"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+
+        style="@style/tel_showtext"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tel_tb"
+        android:background="@color/tb_home"
+        android:layout_height="@dimen/tel_show_height"
+        android:layout_weight="0"
+        android:textSize="30dp"
+
+        android:text="@string/tel_title"
+        android:id="@+id/textview" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textview"
+        android:id="@+id/listview"
+        android:listSelector="@color/colorAccent"
+        >
+
+
+    </ListView>
+
+
+
+</RelativeLayout>

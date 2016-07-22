@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.administrator.mydemo.phone.PhoneActivity">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tb_info"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_homeasup_default"
+        android:onClick="returnHome"
+
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机检测页面"
+        android:textSize="30sp"
+       android:layout_marginLeft="30dp"
+      />
+
+
+</android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:layout_below="@id/tb_info"
+    android:id="@+id/ll_layout_battery"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/phonemgr_height"
+    android:background="@drawable/home_entry_item"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="20dp" >
+    <ProgressBar
+        android:id="@+id/pb_battery"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+
+    android:layout_height="@dimen/phonemgr_battery_height"
+    android:layout_weight="1"
+    android:max="100"
+    android:progress="0"
+
+    android:progressDrawable="@drawable/progressbar_battery"
+        android:indeterminate="false" />
+    <View
+        android:layout_width="10dp"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:background="@color/battery_progressbar_bg" />
+    <TextView
+        android:id="@+id/tv_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0"
+        android:text="80%"
+        android:textColor="@color/battery_speed" />
+
+</LinearLayout>
+
+
+    <TextView
+
+        android:layout_below="@id/ll_layout_battery"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/back"
+
+        android:id="@+id/info_tv" />
+
+
+
+       <ListView
+
+           android:layout_below="@id/info_tv"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/info_lv"
+
+           >
+
+
+       </ListView>
+
+
+
+
+
+</RelativeLayout>

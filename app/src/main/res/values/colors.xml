@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#900</color>
+    <color name="green">#69cfad</color>
+    <color name="blue">#009</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="transparent">#0000</color>
+    <color name="tb_home">#26a2d7</color>
+    <color name="back">#fcd3ebef</color>
+    <!--  电量进度条背景色 -->
+    <color name="battery_progressbar_bg">#FFFF8C00</color>
+    <!--  电量进度条进度色 -->
+    <color name="battery_speed">#FF00AA00</color>
+
+
+</resources>

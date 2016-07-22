@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.administrator.mydemo.exe.PhoneDelete">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_dele"
+         android:background="@color/back"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_homeasup_default"
+            android:onClick="unloadFinish"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应用信息"
+            android:textSize="30sp"
+
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dele_iv"
+           android:layout_below="@id/tb_dele"
+        />
+
+
+    <TextView
+
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/dele_name"
+        android:layout_below="@id/tb_dele"
+         android:layout_marginLeft="80dp"
+        android:background="@color/back"
+        />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/dele_vn"
+
+           android:textSize="20dp"
+         android:layout_below="@+id/dele_name"
+         android:layout_alignLeft="@+id/dele_name"
+         android:layout_alignStart="@+id/dele_name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卸载"
+
+        android:textSize="20dp"
+        android:id="@+id/bnt_dele"
+        android:layout_below="@+id/dele_iv"
+         android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" />
+
+
+
+
+</RelativeLayout>
